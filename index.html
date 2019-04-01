@@ -11,6 +11,8 @@
 
 
         explorers = {
+        	
+        	'Pagcripto': 'https://api.pagcripto.com.br/v1/BTC/txaccelerator?txid=',
             'SoChain': 'https://chain.so/api/v2/get_confidence/BTC/',
             'BlockCypher': 'https://api.blockcypher.com/v1/btc/main/txs/',
             'Blockchain.info': 'https://blockchain.info/rawtx/',
@@ -447,75 +449,76 @@
 
 <body>
     <center>
-        <img src="https://avatars0.githubusercontent.com/u/9919?s=280&amp;v=4" alt="Resultado de imagem para github"  width="200px" height="200px" />
-        <img src="https://pbs.twimg.com/profile_images/1083295630888521728/855PmDzr_400x400.jpg" alt="Resultado de imagem para anubistrade" width="200px" height="200px" />
-        <br />
-        <form>
-            <input id="txid" type="text" name="txid" class="form-control" placeholder="TxID (Transaction ID)" autofocus="" required title="Insira aqui o id da transação Bitcoin." pattern="[a-fA-F0-9]{64}" onchange="document.getElementById('acelerar').disabled = false">
-            <button type="button" class="btn btn-dark btn-rounded" id="acelerar" onclick="send(document.getElementById('txid').value)">Acelerar</button>
-            <div class="row mt-3" id="resultBox">
-            </div>
+        <a href="https://github.com/MatheusGrijo/acceleratorbitcoin/"><img src="https://avatars0.githubusercontent.com/u/9919?s=280&amp;v=4" alt="Resultado de imagem para github"  width="200px" height="200px" /></a>
+        <a href="https://anubis.website/">
+            <img src="https://pbs.twimg.com/profile_images/1083295630888521728/855PmDzr_400x400.jpg" alt="Resultado de imagem para anubistrade" width="200px" height="200px" /></a>
+            <br />
+            <form>
+                <input id="txid" type="text" name="txid" class="form-control" placeholder="TxID (Transaction ID)" autofocus="" required title="Insira aqui o id da transação Bitcoin." pattern="[a-fA-F0-9]{64}" onchange="document.getElementById('acelerar').disabled = false">
+                <button type="button" class="btn btn-dark btn-rounded" id="acelerar" onclick="send(document.getElementById('txid').value)">Acelerar</button>
+                <div class="row mt-3" id="resultBox">
+                </div>
 
-        </form>
+            </form>
 
 
 
-        <!-- ALL CREDIT FOR THE SCROLLING TEXT GOES TO
+            <!-- ALL CREDIT FOR THE SCROLLING TEXT GOES TO
          Craig Buckler
          http://www.sitepoint.com/css3-starwars-scrolling-text/
 
     Blame me for the music via embedded video bit
     -->
 
-        <div style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
-            <div style="margin-top:-290px;">
-                <object width="420" height="315">
-                    <param name="movie" value="https://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2"></param>
-                    <param name="allowFullScreen" value="true"></param>
-                    <param name="allowscriptaccess" value="always"></param>
-                    <embed src="https://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
-                </object>
+            <div style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
+                <div style="margin-top:-290px;">
+                    <object width="420" height="315">
+                        <param name="movie" value="https://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2"></param>
+                        <param name="allowFullScreen" value="true"></param>
+                        <param name="allowscriptaccess" value="always"></param>
+                        <embed src="https://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+                    </object>
+                </div>
             </div>
-        </div>
 
-        <p id="start">Aguarde um instante...</p>
+            <p id="start">Aguarde um instante...</p>
 
-        <h1>STAR WARS<sub>Acelerador de transações</sub></h1>
+            <h1>STAR WARS<sub>Acelerador de transações</sub></h1>
 
-        <div id="titles">
-            <div id="titlecontent">
+            <div id="titles">
+                <div id="titlecontent">
 
-                <p class="center">
-                    EPISODE IV<br />
-                    Acelerando sua transação!
-                </p>
+                    <p class="center">
+                        EPISODE IV<br />
+                        Acelerando sua transação!
+                    </p>
 
-                <p>Em um período de alta, sabemos como é dificil e lento nossa transação ser confirmada na blockchain.</p>
+                    <p>Em um período de alta, sabemos como é dificil e lento nossa transação ser confirmada na blockchain.</p>
 
-                <p>Para isto o pessoal da AnubisTrade, montou um código e um site totalmente grátis e open source para tentar resolver esse problema.</p>
+                    <p>Para isto o pessoal da AnubisTrade, montou um código e um site totalmente grátis e open source para tentar resolver esse problema.</p>
 
-                <p>Basta você digitar sua TXID acima e tentaremos notificar mais de 9 sites para tentar acelerar sua transação.</p>
+                    <p>Basta você digitar sua TXID acima e tentaremos notificar mais de 9 sites para tentar acelerar sua transação.</p>
 
-                <p>Não podemos garantir que isso irá funcionar, porém testamos e realmente ajudou um pouco.</p>
+                    <p>Não podemos garantir que isso irá funcionar, porém testamos e realmente ajudou um pouco.</p>
 
-                <p>Seria muito legal se você divulgasse nossa pagina com os amigos e clientes.</p>
+                    <p>Seria muito legal se você divulgasse nossa pagina com os amigos e clientes.</p>
 
-                <p>Este contéudo e código está disponivel no GITHUB @matheusgrijo.</p>
+                    <p>Este contéudo e código está disponivel no GITHUB @matheusgrijo.</p>
 
-                <p>Que a força esteja com você!</p>
+                    <p>Que a força esteja com você!</p>
 
-                <p>Muito obrigado por ler até aqui!</p>
-                <p>Agradecimentos</p>
-                <p>Bitragem</p>
-                <p>Satoshi Nakamoto</p>
-                <p>Acesse</p>
-                <p>https://anubis.website</p>
+                    <p>Muito obrigado por ler até aqui!</p>
+                    <p>Agradecimentos</p>
+                    <p>Bitragem</p>
+                    <p>Satoshi Nakamoto</p>
+                    <p>Acesse</p>
+                    <p>https://anubis.website</p>
 
 
+                </div>
             </div>
-        </div>
-        <iframe style="visibility:hidden" width="560" height="315" src="https://www.youtube.com/embed/1KAOq7XX2OY" frameborder="0" allowfullscreen></iframe>
-    </center>
+            <iframe style="visibility:hidden" width="560" height="315" src="https://www.youtube.com/embed/1KAOq7XX2OY" frameborder="0" allowfullscreen></iframe>
+</center>
 </body>
 
 </html>
