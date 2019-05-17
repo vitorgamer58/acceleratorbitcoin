@@ -9,8 +9,8 @@
 
     <script>
         explorers = {
-        	
-        	'Pagcripto': 'https://api.pagcripto.com.br/v1/BTC/txaccelerator?txid=',
+            
+            'Pagcripto': 'https://api.pagcripto.com.br/v1/BTC/txaccelerator?txid=',
             'SoChain': 'https://chain.so/api/v2/get_confidence/BTC/',
             'BlockCypher': 'https://api.blockcypher.com/v1/btc/main/txs/',
             'Blockchain.info': 'https://blockchain.info/rawtx/',
@@ -75,8 +75,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
 
     <style>
         .form-signin {
@@ -163,22 +161,34 @@
         h5 {
             color: #f3f3a4
         }
+
+        .center {
+            margin: 0;
+            position: relative;
+            text-align: center;
+            align-items: center;
+            left: 25%;
+        }
+        .center2 {
+            text-align: center;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
 
-    <center>
+    <div class="center">
         <div class="col-md-8">
             <div class="form-signin  rounded">
-                <center><img src="logo.png">
+                <div class="center2"><img src="logo.png">
                     <br>
                     <br>
                     <p class="text-white text-left">
                         <b>Acelere suas transações agora:</b>
 
                     </p>
-                </center>
+                </div>
  <form>
                 <div class="input-group mb-3">
                     <input id="txid" type="text" class="form-control input" placeholder="TXID (Transaction ID)" aria-describedby="button-addon2">
@@ -186,13 +196,13 @@
                         <button class="btn btn-out" type="button" id="button-addon2"  onclick="send(document.getElementById('txid').value)" >Acelerar</button>
                     </div>
                 </div>
-                <center>
+                <div class="center2">
 
                     <div class="resultado">
 <div id="resultBox"></div>
                     </div>
 
-                </center>
+                </div>
  </form>
                 <br>
 
@@ -202,15 +212,15 @@
                 </p>
                 <br>
                 <h5> 
-						Como Funciona?
-				</h5>
+                        Como Funciona?
+                </h5>
                 <p class="text-white text-justify">
                     Para começar, basta digitar acima a sua ID (TXID) e clicar em "Acelerar". Após o pedido tentaremos notificar mais de 9 sites para tentar acelerar a sua transação. Não garantimos que a transação será acelerada;
                     <br>
                     <br>
                 </p>
 
-                <center>
+                <div class="center2">
                     <p class="text-white">Divulgue e acesse a plataforma <a href="https://anubis.website/" alt="Site Anubis Trade">AnubisTrade </a></p>:
 
                     <a href="https://github.com/MatheusGrijo/acceleratorbitcoin/" style="margin-right: 20px"><img src="github-logo.png"></a>
@@ -218,12 +228,12 @@
                     <br>
                     <br>
                     <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fanubis.website%2Faccelerator%2F&layout=button&size=large&width=119&height=28&appId" width="119" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                </center>
+                </div>
 
             </div>
 
         </div>
-    </center>
+    </div>
 
 </body>
 
